@@ -54,12 +54,12 @@ def get_choice():
 
         elif choice == 2:
             try:
-                purpose = input("What do you want to save it for: ")
+                purpose = input("-What do you want to save it for: ")
                 if purpose == "":
                     print("Choose a Valid Name")
                     return False
                 
-                question = input("Do you want to Enter a Email aswell: [yes/no] ")
+                question = input("-Do you want to Enter a Email aswell: [yes/no] ")
                 if (question == "yes") or (question == ""):
                     mail = input("Enter your Mail: ")
                     to_save = generate_password(purpose)

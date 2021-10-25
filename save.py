@@ -10,7 +10,7 @@ def savethis(purpose, to_save, email=""):
         with open(direcmail, "w") as f:
             f.write(email)
             f.close()
-        print(f"\t-Email saved!")
+        print(f"\n\t-Email saved!")
 
     crypter = get_encrypt()
     save_it = to_save.encode("utf-8")
@@ -21,6 +21,3 @@ def savethis(purpose, to_save, email=""):
         f.write(crypto_save)
         f.close()
     print(f"\t-Pa$$w0rd saved!")
-
-
-# try1 = savethis("Youtube", "!sR$592kd8a1XC", "mercy@fuckmedaddy.com")
