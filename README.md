@@ -62,7 +62,7 @@ Fernet takes a user-input, a key, and the current time and produces a token.
 
 That token cannot be read without the key. In this case the "methode.bin"
 
-Encryption is currently done with AES 128 in CBC mode.
+Encryption with the current version is done with AES 128 in CBC mode.
 
 All base 64 encoding is done with the "URL and Filename Safe" variant, defined in RFC 4648 as "base65url".
 
