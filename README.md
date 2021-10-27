@@ -58,7 +58,9 @@ By Choosing Option 3 the program will return your currently saved Passwords. If 
 ## Encryption Methode: Fernet
 
 ### How it works:
-Fernet takes a user-input, a key, and the current time and produces a token. That token cannot be read without the key. In this case the "methode.bin"
+Fernet takes a user-input, a key, and the current time and produces a token.
+
+That token cannot be read without the key. In this case the "methode.bin"
 
 Encryption is currently done with AES 128 in CBC mode.
 
