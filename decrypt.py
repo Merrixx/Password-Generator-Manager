@@ -6,30 +6,40 @@ def readit(ifile):
     Read the Password of a file
     """
     crypter = get_encrypt()
-    path2 = "./purposes/Mail"
-    dir_files2 = os.listdir(path2)
     direc = os.path.join("./purposes/Passwords",f"{ifile}.bin")
-    direc2 = os.path.join("./purposes/Mail",f"{ifile}.bin")
+    dir_files2 = os.listdir("./purposes/Mail")
+    dir_mail = os.path.join("./purposes/Mail",f"{ifile}.bin")
     mail = False
     
     if (f"{ifile}.bin" in dir_files2):
-        with open(direc2, "r") as f:
+        """
+        Check if an email is included
+        """
+        with open(dir_mail, "r") as f:
             text_mail = f.readline()
         with open(direc, "rb") as f:
             text = f.readline()
             mail = True
     else:
+        """
+        If not mail stays False
+        """
         with open(direc, "rb") as f:
             text = f.readline()
             mail = False
     try:
+        """
+        Output depending on the mail value
+        """
         decryptString = crypter.decrypt(text)
         message = (str(decryptString, "utf8"))
+        
         if mail == True:
-            print("The Pa$$w0rd and Mail are:")
-            print(f"Pa$$word: {message} \t||\t Mail: {text_mail}")
+            print(" - The Pa$$w0rd and Mail are:")
+            print(f"\t - Pa$$word: {message}\n"
+                  f"\t - Mail: {text_mail}")
         else:
-            print("The Pa$$w0rd is:")
-            print(f"\t{message}")
+            print(" - The Pa$$w0rd is:")
+            print(f"\t - Pa$$w0rd: {message}")
     except:
         pass

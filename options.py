@@ -46,7 +46,7 @@ def get_choice():
     try:
         choice = int(choice)
         if choice == 1:
-            amount = input("Amount [default:1]")
+            amount = input(" - Amount [default:1] ")
             print("\n   Generated Password's are: ")
             if amount:
                 generate_passwords(amount)
@@ -101,4 +101,4 @@ def get_choice():
             os.system("cls" if os.name == "nt" else "clear")
             exit()
     except ValueError:
-        print("\n\tERROR USE A VALID NUMBER")
+        print("\n\n\n\tERROR USE A VALID NUMBER")
