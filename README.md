@@ -11,11 +11,9 @@ Password-Generator/Manager and decrypt those passwords.
 * [Needed Packages](#packages)
 
 ### Methode 1
--First Installation Methode is by simple Installing the Release Packages.
-
--Find the Download Location and unzip the file.
-
--After that install the needed [Packages](#packages)
+	-First Installation Methode is by simple Installing the Release Packages.
+	-Find the Download Location and unzip the file.
+	-After that install the needed [Packages](#packages)
 
 
 ### Methode 2
