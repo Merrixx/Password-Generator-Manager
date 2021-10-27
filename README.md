@@ -20,7 +20,7 @@ Second Installation Methode is by copying the https link going into a folder. Th
 git clone https://github.com/Merrixx/Password-Generator-Manager.git
 ```
 
-##### Packages
+### Packages
 After you have the Program installed you have to open the directory in a Cmd and type the following Command:
 
 - Installing the required Libaries
