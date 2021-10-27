@@ -55,16 +55,16 @@ By Choosing Option 3 the program will return your currently saved Passwords. If 
 
 # About the Security of this
 
-### Encryption Methode: Fernet
+## Encryption Methode: Fernet
 
-#### How it works:
+### How it works:
 Fernet takes a user-input, a key, and the current time and produces a token. That token cannot be read without the key. In this case the "methode.bin"
 
 Encryption is currently done with AES 128 in CBC mode.
 
 All base 64 encoding is done with the "URL and Filename Safe" variant, defined in RFC 4648 as "base65url".
 
-#### Read more:
+### Read more:
 If you want to read the official Description heres the link:
 > https://github.com/fernet/spec/blob/master/Spec.md
 
