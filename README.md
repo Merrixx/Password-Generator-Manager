@@ -5,38 +5,47 @@ Password-Generator/Manager and decrypt those passwords.
 
 
 # Installation:
-## Installation - Methode 1
-First Installation Methode is by simple Installing the Release Packages.
-Dont forget to install python and pip so you can even install and use the terminal program.
 
-## Installation - Methode 2
+* [Install Methode 1](#methode-1)
+* [Install Methode 2](#methode-2)
+* [Needed Packages](#packages)
+
+### Methode 1
+First Installation Methode is by simple Installing the Release Packages. Find the Download Location and unzip the file. After that install the needed [Packages](#packages)
+
+
+### Methode 2
 Second Installation Methode is by copying the https link going into a folder. Then opening the Cmd and typing:
->git clone https://github.com/Merrixx/Password-Generator-Manager.git
+```
+git clone https://github.com/Merrixx/Password-Generator-Manager.git
+```
 
-
-### Installing the needed Packages for the program.
+##### Packages
 After you have the Program installed you have to open the directory in a Cmd and type the following Command:
 
 - Installing the required Libaries
->pip install -r requirements.txt
+```
+pip install -r requirements.txt
+```
 
 - From now on you can execute the program in the Cmd by typing following Command.
->python main.py
-
+```
+python main.py
+```
 
 
 # Now about the functionality
-- Option 1:                                                                                                                           
+1. Option                                                                                                                           
 You can generate random Passwords in any amount you want. Those will not be saved since they are just randomly generated and just for the sake of copy pasting.
 
-- Option 2:                                                                                                                             
+2. Option                                                                                                                          
 It Generates you a Password and then prompts for you to enter a Purpose, which is suppose to be the reason for you to save the Password. You can also choose if you want to input an email which will be saved aswell and shown on prompt. After you do so it will create a .bin file in the purpose directory and will call it the "purpose" given earlier.
 Dont worry those Passwords will be shown in ecrypted version.
 
-- Option_3:
+3. Option
 Before you are able to get the Password from the program it will ask you for a purpose to input. If it finds a Password associating to that purpose it will return your Password. If an Email was give that one will be output aswell.
 
-- Option 4:                                             
+4. Option                                             
 By Choosing Option 3 the program will return your currently saved Passwords. If an Email is given along with a Password the Program will tell you that aswell.
 
 
